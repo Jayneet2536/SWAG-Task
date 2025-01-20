@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url("Login\ page\ 2.jpg");
+            background-size: cover;
+
+            background-repeat: no-repeat;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            height: 100vh;
+            width: 100vw;
+
+
+        }
+
+        p{
+            font-family: "Ubuntu", serif;
+        }
+
+
+        .container {
+            color: white;
+            height: 600px;
+            width: 600px;
+            border-style: solid;
+            border: none;
+            border-radius: 40px;
+            box-shadow: 0 0 10px rgba(0,0,0,1);
+            background-color: rgba(90, 82, 82, 0.8);
+
+        }
+
+        .heading {
+            margin-top: 50px;
+            text-align: center;
+            font-family: "Ubuntu", serif;
+            font-weight: 600;
+            font-size: 50px;
+            margin-bottom: 0px;
+
+        }
+
+        .subcontainer {
+            width: 100%;
+            height:300px;
+            
+            text-align: center;
+            
+        }
+
+        .email-stuff{
+            display:block;
+            margin-top: 70px;
+        }
+
+        .password-stuff{
+            display:block;
+            margin-top:70px;
+            
+        }
+
+        .other-option{
+            text-align: center;
+            margin-top: 60px;
+            
+        }
+
+        .email, .password{
+            color: rgb(113, 110, 110);
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+            font-size: 15px;
+            padding-left: 15px;
+            margin-top:8px;
+            width:450px;
+            height:50px;
+            border-radius: 25px;
+            border:none;
+            background-color: rgba(239, 238, 238, 0.759);
+        }
+
+        .email-p{
+            margin-right: 300px;
+            font-weight: 600;
+        }
+        .password-p{
+            margin-right: 350px;
+            font-weight: 600;
+        }
+
+        .button{
+            margin-top: 40px;
+        }
+
+        .login{
+            font-family:Arial, Helvetica, sans-serif;
+            font-weight: 700;
+            font-size:20px;
+            color:white;
+            background-color:rgba(157, 3, 157, 0.862);
+            border:none;
+            width:150px;
+            height:40px;
+            border-radius:20px;
+            cursor: pointer;
+
+        }
+
+        .login:hover{
+            opacity: 0.9;
+        }
+
+        .login:active{
+            opacity:0.8;
+            
+        }
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p class="heading">Login</p>
+
+        <div class="subcontainer">
+            <div class="email-stuff">
+                <p class="email-p">College Email ID</p>
+                <input class="email" type="text" placeholder="xxxxxxxxxx@sggs.ac.in">
+            </div>
+
+            <div class="password-stuff">
+                <p class="password-p">Password</p>
+                <input class="password" type="password">
+            </div>
+
+            <div class="button">
+                <button class="login">Login</button>
+            </div>
+
+            
+
+           
+        </div>
+
+        <p class="other-option">don't have an account? <a href="/signup.html">Sign up</a></p>
+
+
+    </div>
+
+</body>
+
+</html>
