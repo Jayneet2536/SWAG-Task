@@ -32,6 +32,7 @@
             background-repeat: no-repeat;
 
             display: flex;
+            flex-direction: row;
             justify-content: center;
             align-items: center;
 
@@ -244,6 +245,65 @@
 
 
         }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+                height: 100%;
+                padding: 20px;
+            }
+
+            .heading {
+                font-size: 35px;
+            }
+
+            .ph-and-dob {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .login {
+                width: 100%;
+                font-size: 18px;
+                height: 50px;
+            }
+
+            .other-option {
+                bottom: 10px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+                height: 120%;
+                padding: 20px;
+            }
+
+            .heading {
+                font-size: 35px;
+            }
+
+            .ph-and-dob {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .login {
+                width: 100%;
+                font-size: 18px;
+                height: 50px;
+            }
+            
+            .Name, .email, .dob, .password{
+                width: 100%;
+            }
+
+            .other-option {
+                bottom: 10px;
+            }
+        }
+        
     </style>
 </head>
 
