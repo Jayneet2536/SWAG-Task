@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Audiowide&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url("Login\ page\ 2.jpg");
+            background-size: cover;
+
+            background-repeat: no-repeat;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            height: 100vh;
+            width: 100vw;
+
+
+        }
+
+        p {
+            font-family: "Audiowide", serif;
+        }
+
+
+        .container {
+            color: white;
+            height: 750px;
+            width: 600px;
+            border-style: solid;
+            border: none;
+            border-radius: 40px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+            background-color: rgba(90, 82, 82, 0.8);
+            position: relative;
+
+        }
+
+        .container:hover {
+
+
+            box-shadow: 0 0 25px rgb(255, 255, 255);
+        }
+
+
+
+        .heading {
+            margin-top: 10px;
+            text-align: center;
+            font-family: "Audiowide", serif;
+            font-weight: 600;
+            font-size: 50px;
+            margin-bottom: 0px;
+
+        }
+
+        .subcontainer {
+            width: 100%;
+            height: 300px;
+
+            text-align: center;
+
+        }
+
+        .email-stuff {
+            display: block;
+            margin-top: 20px;
+        }
+
+        .Name-stuff {
+            display: block;
+            margin-top: 30px;
+
+        }
+
+        .email,
+        .Name {
+            color: rgb(113, 110, 110);
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+            font-size: 15px;
+            padding-left: 15px;
+            margin-top: 8px;
+            width: 450px;
+            height: 50px;
+            border-radius: 25px;
+            border: none;
+            background-color: rgba(239, 238, 238, 0.759);
+        }
+
+        .email-p {
+            margin-right: 335px;
+            font-weight: 600;
+        }
+
+        .Name-p {
+            margin-right: 350px;
+            font-weight: 600;
+        }
+
+        .ph-and-dob {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            margin-top: 20px;
+            margin-bottom: 0px;
+        }
+
+        .phone-number-stuff {
+            margin-left: 80px;
+        }
+
+        .phone-number-p {
+            margin-left: -80px;
+            font-weight: 600;
+        }
+
+        .phone-number {
+            color: rgb(113, 110, 110);
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+            font-size: 15px;
+            padding-left: 15px;
+            margin-top: 8px;
+            width: 200px;
+            height: 50px;
+            border-radius: 25px;
+            border: none;
+            background-color: rgba(239, 238, 238, 0.759);
+        }
+
+        .dob-stuff {
+            margin-right: 80px
+        }
+
+        .dob-p {
+            margin-right: 80px;
+            font-weight: 600;
+
+        }
+
+        .dob {
+            color: rgb(113, 110, 110);
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+            font-size: 15px;
+            padding-left: 15px;
+            margin-top: 8px;
+            width: 200px;
+            height: 50px;
+            border-radius: 25px;
+            border: none;
+            background-color: rgba(239, 238, 238, 0.759);
+        }
+
+        .password-stuff {
+            display: block;
+            margin-top: 20px;
+
+        }
+
+        .password-p {
+            margin-right: 300px;
+            font-weight: 600;
+        }
+
+        .password-p1 {
+            margin-right: 276px;
+            font-weight: 600;
+        }
+
+        .password {
+            color: rgb(113, 110, 110);
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+            font-size: 15px;
+            padding-left: 15px;
+            margin-top: 8px;
+            width: 450px;
+            height: 50px;
+            border-radius: 25px;
+            border: none;
+            background-color: rgba(239, 238, 238, 0.759);
+        }
+
+        .button {
+            margin-top: 40px;
+        }
+
+        .login {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 700;
+            font-size: 20px;
+            color: white;
+            background-color: rgba(157, 3, 157, 0.862);
+            border: none;
+            width: 150px;
+            height: 40px;
+            border-radius: 20px;
+            cursor: pointer;
+
+        }
+
+        .login:hover {
+            opacity: 0.9;
+        }
+
+        .login:active {
+            opacity: 0.8;
+
+        }
+
+
+        .other-option {
+
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            text-align: center;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p class="heading">SignUp</p>
+
+        <div class="subcontainer">
+            <div class="Name-stuff">
+                <p class="Name-p">Name</p>
+                <input class="Name" type="text">
+            </div>
+            <div class="email-stuff">
+                <p class="email-p">Email ID</p>
+                <input class="email" type="text" placeholder="xxxxxxxxxx@sggs.ac.in">
+            </div>
+
+            <div class="ph-and-dob">
+                <div class="phone-number-stuff">
+                    <p class="phone-number-p">Ph. Number</p>
+                    <input class="phone-number" type="number">
+                </div>
+
+                <div class="dob-stuff">
+                    <p class="dob-p">Date of Birth</p>
+                    <input class="dob" type="date">
+                </div>
+
+            </div>
+
+            <div class="password-stuff">
+                <p class="password-p">Enter Password</p>
+                <input class="password" type="password">
+            </div>
+
+            <div class="password-stuff">
+                <p class="password-p1">Confirm Password</p>
+                <input class="password" type="password">
+            </div>
+
+
+            <div class="button">
+                <button class="login">SignUp</button>
+            </div>
+
+
+
+
+        </div>
+
+        <p class="other-option">Already have an account? <a style="color:red;" href="login.html">Login</a></p>
+
+
+    </div>
+</body>
+
+</html>
